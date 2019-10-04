@@ -33,5 +33,10 @@ export default function Dashboard() {
     const [ball, setBall] = useState(0);
     return (
         <div>
-    )
+            <button onClick={() => setStrike(addStrike(strike))}>Strike</button>
+            <button onClick={() => setBall(addBall(ball))}>Ball</button>
+            <button onClick={() => setStrike(addFoul(strike))}>Foul</button>
+            <button onClick={() => (addHit(strike), setBall(addHit(ball)))}>Hit</button>
+        </div>
+    );
 }
