@@ -1,14 +1,13 @@
-import React from 'react';
-import './App.css';
-import Display from "./components/Display";
-import Dashboard from "./components/Dashboard";
+import React, { useState } from 'react';
+import Display from './components/Display';
+
 
 
 function App() {
   return (
     <div className="App">
+      <h1>Baseball App</h1>
       <Display />
-      <Dashboard />
     </div>
   );
 }
